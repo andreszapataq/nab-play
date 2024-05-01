@@ -42,7 +42,7 @@ module.exports = {
           8: '#E5E7EB',
         },
         primary: '#00a550',
-        'blue-dark': '#1B44C8',
+        'green-dark': '#00843c',
         secondary: '#13C296',
         'body-color': '#637381',
         'body-secondary': '#8899A8',

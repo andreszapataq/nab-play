@@ -3,43 +3,43 @@ const priceboxes = [
   {
     popular:false,
     packageName:"Starter",
-    price:'25.00',
+    price:'150',
     subtitle:'Features',
-    btn:'Purchase Now',
+    btn:'Start Now',
     purchaseLink:'/#',
     offerlist: [
-      {title: "Up to 1 User"},
-      {title: "All UI components"},
+      {title: "For startups"},
       {title: "Lifetime access"},
       {title: "Free updates"},
+      {title: "Up to 1 Company"},
     ],
   },
   {
     popular:true,
     packageName:"Basic",
-    price:'59.00',
+    price:'250',
     subtitle:'Features',
-    btn:'Purchase Now',
+    btn:'Start Now',
     purchaseLink:'/#',
     offerlist: [
-      {title: "Up to 1 User"},
-      {title: "All UI components"},
+      {title: "For small business"},
       {title: "Lifetime access"},
       {title: "Free updates"},
+      {title: "Up to 1 Company"},
     ],
   },
   {
     popular:false,
     packageName:"Premium",
-    price:'99.00',
+    price:'450',
     subtitle:'Features',
-    btn:'Purchase Now',
+    btn:'Start Now',
     purchaseLink:'/#',
     offerlist: [
-      {title: "Up to 1 User"},
-      {title: "All UI components"},
+      {title: "For medium and large companies"},
       {title: "Lifetime access"},
       {title: "Free updates"},
+      {title: "Up to 1 Company"},
     ],
   },
 ]
@@ -58,7 +58,7 @@ const priceboxes = [
             Pricing Table
           </span>
           <h2 class="mb-3 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:leading-[1.2] md:text-[40px]">
-            Awesome Pricing Plan
+            Accounting Pricing Plan
           </h2>
           <p class="text-base text-body-color dark:text-dark-6">
             There are many variations of passages of Lorem Ipsum available
@@ -114,7 +114,7 @@ const priceboxes = [
 
             <a
               href={pricebox.purchaseLink}
-              class={`inline-block rounded-md bg-primary py-3 px-7 text-center text-base font-medium text-white transition hover:bg-blue-dark`}
+              class={`inline-block rounded-md bg-primary py-3 px-7 text-center text-base font-medium text-white transition hover:bg-green-dark`}
             >
               {pricebox.btn}
             </a>
