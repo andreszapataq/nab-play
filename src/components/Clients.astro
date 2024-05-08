@@ -1,8 +1,8 @@
 ---
 const clients = [
-  { ref: "https://tailgrids.com", image: "/assets/brands/ea.svg", whiteImage: "/assets/brands/ea.svg", name: "tailgrids"},
-  { ref: "https://ayroui.com", image: "/assets/brands/ptin.svg", whiteImage: "/assets/brands/ptin.svg", name: "ayroui"},
-  { ref: "https://uideck.com", image: "/assets/brands/rtrp.svg", whiteImage: "/assets/brands/rtrp.svg", name: "uideck"},
+  { ref: "/", image: "/assets/brands/ea.svg", whiteImage: "/assets/brands/ea.svg", name: "ea"},
+  { ref: "/", image: "/assets/brands/ptin.svg", whiteImage: "/assets/brands/ptin.svg", name: "ptin"},
+  { ref: "/", image: "/assets/brands/rtrp.svg", whiteImage: "/assets/brands/rtrp.svg", name: "rtrp"},
   /* { ref: "https://graygrids.com", image: "/assets/brands/ayroui.svg", whiteImage: "/assets/brands/ayroui-white.svg", name: "graygrids"},
   { ref: "https://lineicons.com", image: "/assets/brands/tailgrids.svg", whiteImage: "/assets/brands/tailgrids-white.svg", name: "lineicons"}, */
 ]
@@ -16,7 +16,6 @@ const clients = [
         clients.map(client => (
           <a
             href={client.ref}
-            target="_blank"
             rel="nofollow noopner"
           >
             <img
