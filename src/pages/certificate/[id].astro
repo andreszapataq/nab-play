@@ -1,5 +1,6 @@
 ---
 import { certificates } from '../../data/certificates';
+import { generateCertificateId } from '../../utils/generateId';
 
 export async function getStaticPaths() {
     return certificates.map(certificate => ({
@@ -9,19 +10,22 @@ export async function getStaticPaths() {
 }
 
 const { certificate } = Astro.props;
+// generateCertificateId();
 ---
 
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificado - {certificate.studentName}</title>
+    <title>Certificate - {certificate.studentName}</title>
     <meta name="description" content={`Certificado de ${certificate.courseName} para ${certificate.studentName}`}>
 </head>
 <body class="m-0 p-0 font-sans bg-gray-100">
     <main class="max-w-7xl mx-auto my-8 px-4">
         <div class="mb-8">
-            <img src="/assets/logo/logo.png" alt="Logo" class="max-w-[120px] h-auto">
+            <a href="/">
+                <img src="/assets/logo/logo.png" alt="Logo" class="max-w-[120px] h-auto">
+            </a>
         </div>
 
         <div class="bg-white p-8 rounded-lg shadow-sm">
@@ -38,7 +42,7 @@ const { certificate } = Astro.props;
 
                 <div class="md:w-1/2 flex flex-col justify-center">
                     <h1 class="text-gray-800 text-2xl uppercase mb-6 font-semibold">
-                        PRUEBA DE FINALIZACIÓN
+                        CERTIFICATE OF COMPLETION
                     </h1>
                     
                     <h2 class="text-gray-600 text-xl mb-6">
@@ -46,8 +50,8 @@ const { certificate } = Astro.props;
                     </h2>
                     
                     <p class="text-gray-700 leading-relaxed mb-8">
-                        Esto confirma que <span class="font-bold text-black">{certificate.studentName}</span> 
-                        ha completado el curso: <span class="font-bold text-black">{certificate.courseName}</span>
+                        This confirms that <span class="font-bold text-black">{certificate.studentName}</span> 
+                        has completed the course: <span class="font-bold text-black">{certificate.courseName}</span>
                     </p>
 
                     <a 
@@ -55,7 +59,7 @@ const { certificate } = Astro.props;
                         class="w-fit bg-green-600 text-white px-8 py-3 rounded-md font-medium 
                                transition-colors duration-300 hover:bg-green-700"
                     >
-                        Ver otros cursos
+                        Explore other courses
                     </a>
                 </div>
             </div>
